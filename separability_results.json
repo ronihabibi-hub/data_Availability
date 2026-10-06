@@ -1,0 +1,55 @@
+{
+  "top10_single_feature_auc": [
+    [
+      "Down_Up_Ratio",
+      0.995953
+    ],
+    [
+      "Tot_Fwd_Pkts",
+      0.9882835000000001
+    ],
+    [
+      "Fwd_Header_Len",
+      0.9882835000000001
+    ],
+    [
+      "TotLen_Bwd_Pkts",
+      0.920376
+    ],
+    [
+      "Flow_IAT_Mean",
+      0.91214
+    ],
+    [
+      "Flow_IAT_Min",
+      0.899514
+    ],
+    [
+      "Fwd_Pkts_s",
+      0.8433839999999998
+    ],
+    [
+      "Flow_IAT_Max",
+      0.8136749999999999
+    ],
+    [
+      "Tot_Bwd_Pkts",
+      0.8098755
+    ],
+    [
+      "Bwd_Header_Len",
+      0.8098755
+    ]
+  ],
+  "decision_stump_depth1_5fold_cv_accuracy": {
+    "mean_pct": 95.76,
+    "std_pct": 0.7735631842325494,
+    "fold_values_pct": [
+      95.19999999999999,
+      95.19999999999999,
+      95.0,
+      96.6,
+      96.8
+    ]
+  }
+}
