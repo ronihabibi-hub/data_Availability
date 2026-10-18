@@ -1,0 +1,203 @@
+{
+  "KNN": {
+    "bulk": {
+      "n": 150,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "chat": {
+      "n": 144,
+      "errors": 6,
+      "error_rate_pct": 4.166666666666666
+    },
+    "conf": {
+      "n": 149,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "dns": {
+      "n": 370,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "http_flood": {
+      "n": 156,
+      "errors": 26,
+      "error_rate_pct": 16.666666666666664
+    },
+    "lms": {
+      "n": 194,
+      "errors": 26,
+      "error_rate_pct": 13.402061855670103
+    },
+    "ssh": {
+      "n": 93,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "syn_flood": {
+      "n": 191,
+      "errors": 6,
+      "error_rate_pct": 3.1413612565445024
+    },
+    "udp_flood": {
+      "n": 153,
+      "errors": 9,
+      "error_rate_pct": 5.88235294117647
+    },
+    "video": {
+      "n": 216,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "web": {
+      "n": 684,
+      "errors": 11,
+      "error_rate_pct": 1.608187134502924
+    },
+    "flood_stealth_0": {
+      "n": 379,
+      "errors": 22,
+      "error_rate_pct": 5.804749340369393
+    },
+    "flood_stealth_1": {
+      "n": 121,
+      "errors": 19,
+      "error_rate_pct": 15.702479338842975
+    }
+  },
+  "DecisionTree": {
+    "bulk": {
+      "n": 150,
+      "errors": 2,
+      "error_rate_pct": 1.3333333333333335
+    },
+    "chat": {
+      "n": 144,
+      "errors": 2,
+      "error_rate_pct": 1.3888888888888888
+    },
+    "conf": {
+      "n": 149,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "dns": {
+      "n": 370,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "http_flood": {
+      "n": 156,
+      "errors": 20,
+      "error_rate_pct": 12.82051282051282
+    },
+    "lms": {
+      "n": 194,
+      "errors": 20,
+      "error_rate_pct": 10.309278350515463
+    },
+    "ssh": {
+      "n": 93,
+      "errors": 1,
+      "error_rate_pct": 1.0752688172043012
+    },
+    "syn_flood": {
+      "n": 191,
+      "errors": 4,
+      "error_rate_pct": 2.094240837696335
+    },
+    "udp_flood": {
+      "n": 153,
+      "errors": 3,
+      "error_rate_pct": 1.9607843137254901
+    },
+    "video": {
+      "n": 216,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "web": {
+      "n": 684,
+      "errors": 8,
+      "error_rate_pct": 1.1695906432748537
+    },
+    "flood_stealth_0": {
+      "n": 379,
+      "errors": 17,
+      "error_rate_pct": 4.485488126649076
+    },
+    "flood_stealth_1": {
+      "n": 121,
+      "errors": 10,
+      "error_rate_pct": 8.264462809917356
+    }
+  },
+  "RandomForest": {
+    "bulk": {
+      "n": 150,
+      "errors": 1,
+      "error_rate_pct": 0.6666666666666667
+    },
+    "chat": {
+      "n": 144,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "conf": {
+      "n": 149,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "dns": {
+      "n": 370,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "http_flood": {
+      "n": 156,
+      "errors": 32,
+      "error_rate_pct": 20.51282051282051
+    },
+    "lms": {
+      "n": 194,
+      "errors": 9,
+      "error_rate_pct": 4.639175257731959
+    },
+    "ssh": {
+      "n": 93,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "syn_flood": {
+      "n": 191,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "udp_flood": {
+      "n": 153,
+      "errors": 1,
+      "error_rate_pct": 0.6535947712418301
+    },
+    "video": {
+      "n": 216,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "web": {
+      "n": 684,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "flood_stealth_0": {
+      "n": 379,
+      "errors": 14,
+      "error_rate_pct": 3.6939313984168867
+    },
+    "flood_stealth_1": {
+      "n": 121,
+      "errors": 19,
+      "error_rate_pct": 15.702479338842975
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "train_records": 2000,
+  "test_records": 500,
+  "results": {
+    "1": {
+      "KNN_kd_tree": {
+        "ms_per_1000_records": 923.847829333378,
+        "n_records_per_pass": 500,
+        "passes": 3
+      },
+      "KNN_brute": {
+        "ms_per_1000_records": 319.4071280001178,
+        "n_records_per_pass": 500,
+        "passes": 3
+      },
+      "DecisionTree": {
+        "ms_per_1000_records": 51.062084666530914,
+        "n_records_per_pass": 500,
+        "passes": 3
+      },
+      "RandomForest": {
+        "ms_per_1000_records": 5260.047161333508,
+        "n_records_per_pass": 500,
+        "passes": 3
+      }
+    },
+    "10": {
+      "KNN_kd_tree": {
+        "ms_per_1000_records": 124.23358559999544,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "KNN_brute": {
+        "ms_per_1000_records": 33.50132080004187,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "DecisionTree": {
+        "ms_per_1000_records": 5.049392800083296,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "RandomForest": {
+        "ms_per_1000_records": 506.7369911999776,
+        "n_records_per_pass": 500,
+        "passes": 5
+      }
+    },
+    "100": {
+      "KNN_kd_tree": {
+        "ms_per_1000_records": 29.9053339999773,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "KNN_brute": {
+        "ms_per_1000_records": 7.815743199989812,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "DecisionTree": {
+        "ms_per_1000_records": 0.47981240004446585,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "RandomForest": {
+        "ms_per_1000_records": 50.674678399991535,
+        "n_records_per_pass": 500,
+        "passes": 5
+      }
+    },
+    "500": {
+      "KNN_kd_tree": {
+        "ms_per_1000_records": 21.183271999962017,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "KNN_brute": {
+        "ms_per_1000_records": 5.570675999933883,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "DecisionTree": {
+        "ms_per_1000_records": 0.194186000044283,
+        "n_records_per_pass": 500,
+        "passes": 5
+      },
+      "RandomForest": {
+        "ms_per_1000_records": 13.801589600006992,
+        "n_records_per_pass": 500,
+        "passes": 5
+      }
+    }
+  }
+}

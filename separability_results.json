@@ -1,55 +1,164 @@
 {
+  "dataset": "network_flood_dataset.csv",
+  "n": 2500,
   "top10_single_feature_auc": [
     [
       "Down_Up_Ratio",
-      0.995953
-    ],
-    [
-      "Tot_Fwd_Pkts",
-      0.9882835000000001
-    ],
-    [
-      "Fwd_Header_Len",
-      0.9882835000000001
-    ],
-    [
-      "TotLen_Bwd_Pkts",
-      0.920376
-    ],
-    [
-      "Flow_IAT_Mean",
-      0.91214
-    ],
-    [
-      "Flow_IAT_Min",
-      0.899514
+      0.9214995
     ],
     [
       "Fwd_Pkts_s",
-      0.8433839999999998
+      0.878334
     ],
     [
       "Flow_IAT_Max",
-      0.8136749999999999
+      0.8530329999999999
     ],
     [
-      "Tot_Bwd_Pkts",
-      0.8098755
+      "Flow_IAT_Mean",
+      0.848909
+    ],
+    [
+      "TotLen_Bwd_Pkts",
+      0.8430230000000001
+    ],
+    [
+      "Flow_Pkts_s",
+      0.8400960000000002
+    ],
+    [
+      "Bwd_Pkt_Len_Max",
+      0.829963
+    ],
+    [
+      "Flow_Duration",
+      0.80393
     ],
     [
       "Bwd_Header_Len",
-      0.8098755
+      0.7659885
+    ],
+    [
+      "Tot_Bwd_Pkts",
+      0.7607165
     ]
   ],
-  "decision_stump_depth1_5fold_cv_accuracy": {
-    "mean_pct": 95.76,
-    "std_pct": 0.7735631842325494,
-    "fold_values_pct": [
-      95.19999999999999,
-      95.19999999999999,
-      95.0,
-      96.6,
-      96.8
-    ]
+  "top8_feature_ratio_scan": [
+    {
+      "ratio": "TotLen_Fwd_Pkts/TotLen_Bwd_Pkts",
+      "auc": 0.9385325,
+      "best_single_threshold_accuracy_pct": 90.16
+    },
+    {
+      "ratio": "Down_Up_Ratio/Flow_Byts_s",
+      "auc": 0.9295505000000001,
+      "best_single_threshold_accuracy_pct": 90.03999999999999
+    },
+    {
+      "ratio": "Flow_Duration/TotLen_Fwd_Pkts",
+      "auc": 0.9284145,
+      "best_single_threshold_accuracy_pct": 90.48
+    },
+    {
+      "ratio": "Tot_Bwd_Pkts/TotLen_Fwd_Pkts",
+      "auc": 0.9254205,
+      "best_single_threshold_accuracy_pct": 88.88000000000001
+    },
+    {
+      "ratio": "Down_Up_Ratio/Fwd_Pkt_Len_Mean",
+      "auc": 0.9254175,
+      "best_single_threshold_accuracy_pct": 88.88000000000001
+    },
+    {
+      "ratio": "Fwd_Pkts_s/Down_Up_Ratio",
+      "auc": 0.9251665,
+      "best_single_threshold_accuracy_pct": 88.32
+    },
+    {
+      "ratio": "Down_Up_Ratio/Fwd_Pkts_s",
+      "auc": 0.9251665,
+      "best_single_threshold_accuracy_pct": 88.32
+    },
+    {
+      "ratio": "TotLen_Bwd_Pkts/TotLen_Fwd_Pkts",
+      "auc": 0.9227595,
+      "best_single_threshold_accuracy_pct": 88.48
+    }
+  ],
+  "n_ratios_scanned": 600,
+  "n_ratios_with_undefined_records": 408,
+  "zero_denominator_policy": "all records kept; undefined placed above or below all finite values, higher AUC kept",
+  "top5_defined_records_only_scan": [
+    {
+      "ratio": "Flow_IAT_Min/Fwd_Pkt_Len_Min",
+      "auc": 0.9717811600164541,
+      "best_single_threshold_accuracy_pct": 93.12169312169311,
+      "n_records_retained": 756
+    },
+    {
+      "ratio": "Flow_IAT_Mean/Fwd_Pkt_Len_Min",
+      "auc": 0.9382055852644088,
+      "best_single_threshold_accuracy_pct": 91.53439153439153,
+      "n_records_retained": 756
+    },
+    {
+      "ratio": "Down_Up_Ratio/Fwd_Pkt_Len_Min",
+      "auc": 0.9325928972987797,
+      "best_single_threshold_accuracy_pct": 93.51851851851852,
+      "n_records_retained": 756
+    },
+    {
+      "ratio": "Bwd_Pkt_Len_Min/Fwd_Pkt_Len_Min",
+      "auc": 0.9303441656382833,
+      "best_single_threshold_accuracy_pct": 91.13756613756614,
+      "n_records_retained": 756
+    },
+    {
+      "ratio": "Flow_Duration/TotLen_Fwd_Pkts",
+      "auc": 0.9276312912676549,
+      "best_single_threshold_accuracy_pct": 91.75302245250433,
+      "n_records_retained": 2316
+    }
+  ],
+  "n_ratios_with_auc_ge_0_999": 0,
+  "distinct_ratio_values_by_class": {
+    "Fwd_Pkts_s/Flow_Pkts_s": {
+      "0": 920,
+      "1": 165
+    },
+    "Bwd_Pkts_s/Flow_Pkts_s": {
+      "0": 920,
+      "1": 165
+    },
+    "Fwd_Header_Len/Tot_Fwd_Pkts": {
+      "0": 3,
+      "1": 3
+    },
+    "Bwd_Header_Len/Tot_Bwd_Pkts": {
+      "0": 3,
+      "1": 3
+    }
+  },
+  "low_capacity_models": {
+    "stump_depth1": {
+      "oof_accuracy_pct": 89.88000000000001,
+      "oof_roc_auc": 0.7675829999999999
+    },
+    "tree_depth2": {
+      "oof_accuracy_pct": 90.36,
+      "oof_roc_auc": 0.9219390000000001
+    },
+    "tree_depth3": {
+      "oof_accuracy_pct": 94.16,
+      "oof_roc_auc": 0.9619494999999999
+    },
+    "logistic_regression": {
+      "oof_accuracy_pct": 96.0,
+      "oof_roc_auc": 0.9917020000000001
+    },
+    "label_permutation_tree_depth3": {
+      "oof_accuracy_pct": 79.64,
+      "oof_roc_auc": 0.519568
+    }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "n_records": 2500,
+  "violations": {
+    "fwd_len_min<=mean<=max": 0,
+    "bwd_len_min<=max": 0,
+    "IAT_min<=mean<=max": 0,
+    "IAT_max<=duration": 0,
+    "duration==IAT_mean*(pkts-1)": 0,
+    "TotLen_Fwd==Fwd_mean*Fwd_pkts": 0,
+    "TotLen_Fwd within [pkts*min, pkts*max]": 0,
+    "TotLen_Bwd within [pkts*min, pkts*max]": 0,
+    "Bwd bytes>0 only if Bwd pkts>0": 0,
+    "Flow_Pkts_s*duration==pkts": 0,
+    "Flow_Byts_s*duration==bytes": 0,
+    "Fwd_Pkts_s+Bwd_Pkts_s==Flow_Pkts_s": 0,
+    "Down_Up_Ratio==Bwd_pkts/Fwd_pkts": 0,
+    "payload length <=1472 bytes": 0,
+    "header len multiple of 8,20,32 per packet and <=32/pkt": 0,
+    "flag counts <= packets": 0,
+    "URG in {0,1}": 0,
+    "no missing/inf/negative values": 0,
+    "at least 2 packets per flow": 0
+  },
+  "all_checks_pass": true,
+  "distinct_values_of_Fwd_Pkts_s/Flow_Pkts_s_by_class": {
+    "0": 920.0,
+    "1": 165.0
+  }
+}
